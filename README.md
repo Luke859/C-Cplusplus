@@ -161,6 +161,6 @@ float vitesse[8];
 int numbers[5] = {4, 8, 3, 2, 4}
 ```
 
-- Un tableau en C/C++ est une succession en mémoire des éléments à partir du premier.
+-Un tableau en C/C++ est une succession en mémoire des éléments à partir du premier.
 
-On peut donc représenter un tableau grâce à un pointeur vers son premier élément,son type et sa taille!
+-On peut donc représenter un tableau grâce à un pointeur vers son premier élément,son type et sa taille!
