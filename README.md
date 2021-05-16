@@ -92,7 +92,7 @@ Résultat :
 
 &nbsp;
 
-### **<span style="color: green">I- Déclarer une variable**</span>
+### **<span style="color: lightgreen">I- Déclarer une variable**</span>
 
 - Le compilateur doit connaître à l'avance la taille des données.
 ```
@@ -102,7 +102,7 @@ C'est le nom du type que l'on utilise pour déclarer une variable.
 
 &nbsp;
 
-### **<span style="color: orange">II- Types primitifs**</span>
+### **<span style="color: lightgreen">II- Types primitifs**</span>
 
 - >``int`` -> Un entier ( 4 octets )
 - >``float`` -> Un décimal ( 4 octets, utilise d'autres registres du processeur)
@@ -145,4 +145,22 @@ number = 5;
 char letter = 'a';
 letter = 63;
 ```
+&nbsp;
 
+### **<span style="color: lightgreen">IV- Tableaux**</span>
+
+Pour créer un tableau : 
+```
+type nomDeVariable[tailleDuTableau];
+```
+:warning: Une fois le tableau déclarés, ils conservent leur taille durant toute la durée d'exécution.
+
+Exemple:
+```
+float vitesse[8];
+int numbers[5] = {4, 8, 3, 2, 4}
+```
+
+- Un tableau en C/C++ est une succession en mémoire des éléments à partir du premier.
+
+On peut donc représenter un tableau grâce à un pointeur vers son premier élément,son type et sa taille!
