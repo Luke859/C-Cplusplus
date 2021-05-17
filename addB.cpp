@@ -19,12 +19,20 @@ int main(){
 
 /* ou 
 
-cout << "Resultat: " << a 
+int main(){
+    int a = 0;
+    int b = 0;
+    cout << "Nombre entier :" << endl;
+    cin >> a;
+    cout << "Second nombre entier :" << endl;
+    cin >> b;
+    cout << "Resultat: " << a 
 
-if(b >= 0){
-        cout << " + " << b ; 
-    } else {
-        cout << " - " << -b ;
-    }
-cout << " = " << (a + b) << endl;
-return 0 ; */
+    if(b >= 0){
+            cout << " + " << b ; 
+        } else {
+            cout << " - " << -b ;
+        }
+    cout << " = " << (a + b) << endl;
+    return 0 ; 
+}*/

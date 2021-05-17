@@ -65,6 +65,14 @@ L'opérateur ``<<`` sert à manipuler **les flux** (suite infinie d'élements g�
 
 Code -> <span style="color: pink"> add.cpp </span>
 
+**Enoncé :**
+&nbsp;
+
+![Enonce](Images/Capture.PNG)
+
+&nbsp;
+
+**Code :**
 ```
 # include <iostream>
 
@@ -87,8 +95,10 @@ Résultat :
 &nbsp;
 
 ---
-# Types et variables
+# COURS
+## Types et variables
 ---
+
 &nbsp;
 
 ## **<span style="color: lightgreen">I- Déclarer une variable**</span>
@@ -171,11 +181,6 @@ int numbers[5] = {4, 8, 3, 2, 4}
 
 &nbsp;
 
-``std::vector`` - *permet de déclarer un tableau dynamique*.
-type nomDArgument[] - *on peut l'utiliser quand on ne connaît pas la taille d'un tableau*
-
-&nbsp;
-
 ## 2- Index tableau
 
 &nbsp;
@@ -208,3 +213,23 @@ int length = sizeof(array) / sizeof(int)
 ```
 
 &nbsp;
+
+- Quand on ne connait pas la taille d'un tableau en argument, on peut l'écrire comme ceci -> ``type nomDArgument[]``
+- Déclarer un tableau dynamique ``std::vector`` 
+
+&nbsp;
+
+## **<span style="color: lightgreen">V- Chaines de caractères**</span>
+
+- Une chaîne de caractères est un tableau de ``char`` dont le dernier élément est le caractère nul \0.
+```
+char chaine[20]
+```
+avec dernier element \0 (nul)
+
+OU 
+```
+char* chaine = "Bonjour";
+```
+Voir exo -> [code](hello.cpp)
+
