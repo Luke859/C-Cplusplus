@@ -172,7 +172,7 @@ int numbers[5] = {4, 8, 3, 2, 4}
 &nbsp;
 
 ``std::vector`` - *permet de déclarer un tableau dynamique*.
-type nomDArgument[] - *on peut l'utiliser quand on ne connaît pas la taille d'un tableau*
+``type nomDArgument[]`` - *on peut l'utiliser quand on ne connaît pas la taille d'un tableau*
 
 &nbsp;
 
