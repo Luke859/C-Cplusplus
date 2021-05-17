@@ -231,5 +231,5 @@ OU
 ```
 char* chaine = "Bonjour";
 ```
-Voir exo -> [code](hello.cpp)
+Voir exo aide -> [code](/Hello[]/hello.cpp)
 
