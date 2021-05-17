@@ -138,7 +138,7 @@ double someDouble = 3.4;
 
 ## **<span style="color: lightgreen">III- Réassigner une variable**</span>
 
-Une fois une variable déclarée en peu lui réasigner une nouvelle valeur avec le `` = ``
+Une fois une variable déclarée on peu lui réasigner une nouvelle valeur avec le `` = ``
 
 !!!!:warning: UNE VARIABLE NE PEUT PAS CHANGER DE TYPE :warning:!!!!
 
