@@ -87,12 +87,11 @@ Résultat :
 &nbsp;
 
 ---
-## Types et variables
+# Types et variables
 ---
-
 &nbsp;
 
-### **<span style="color: lightgreen">I- Déclarer une variable**</span>
+## **<span style="color: lightgreen">I- Déclarer une variable**</span>
 
 - Le compilateur doit connaître à l'avance la taille des données.
 ```
@@ -102,7 +101,7 @@ C'est le nom du type que l'on utilise pour déclarer une variable.
 
 &nbsp;
 
-### **<span style="color: lightgreen">II- Types primitifs**</span>
+## **<span style="color: lightgreen">II- Types primitifs**</span>
 
 - >``int`` -> Un entier ( 4 octets )
 - >``float`` -> Un décimal ( 4 octets, utilise d'autres registres du processeur)
@@ -127,7 +126,7 @@ double someDouble = 3.4;
 
 &nbsp;
 
-### **<span style="color: lightgreen">III- Réassigner une variable**</span>
+## **<span style="color: lightgreen">III- Réassigner une variable**</span>
 
 Une fois une variable déclarée en peu lui réasigner une nouvelle valeur avec le `` = ``
 
@@ -147,25 +146,65 @@ letter = 63;
 ```
 &nbsp;
 
-### **<span style="color: lightgreen">IV- Tableaux**</span>
+## **<span style="color: lightgreen">IV- Tableaux**</span>
 
-Pour créer un tableau : 
+## 1- Pour créer un tableau : 
+
+&nbsp;
 ```
 type nomDeVariable[tailleDuTableau];
 ```
 :warning: Une fois le tableau déclarés, ils conservent leur taille durant toute la durée d'exécution.
+
+&nbsp;
 
 Exemple:
 ```
 float vitesse[8];
 int numbers[5] = {4, 8, 3, 2, 4}
 ```
+- Les tableaux sont de tailles fixe et connue à la compilation.
 
--Un tableau en C/C++ est une succession en mémoire des éléments à partir du premier.
+- Un tableau en C/C++ est une succession en mémoire des éléments à partir du premier.
 
--On peut donc représenter un tableau grâce à un pointeur vers son premier élément,son type et sa taille!
+- On peut donc représenter un tableau grâce à un pointeur vers son premier élément,son type et sa taille!
 
-`std::vector` - *permet de déclarer un tableau dynamique*.
+&nbsp;
+
+``std::vector`` - *permet de déclarer un tableau dynamique*.
 type nomDArgument[] - *on peut l'utiliser quand on ne connaît pas la taille d'un tableau*
 
-`int length = sizeof(array) / siezof(array[O]);` - *si on ne connait pas la taille en éléments d'un tableau, on peut la déduire par sa taille en octets divisé par la taille du premier élément*.
+&nbsp;
+
+## 2- Index tableau
+
+&nbsp;
+
+- Pour accéder à l'index du tableau ( ex: 0 qui est le 1er element du tableau), on utilise ``arr`` plus précisement ``arr[n]``
+
+&nbsp;
+
+**Exemple:**
+```
+int arr[4];
+arr[2] = 3.2;
+```
+
+&nbsp;
+
+## 3- Taille d'un tableau
+
+&nbsp;
+
+
+- Si on ne connait pas la taille en éléments d'un tableau, on peut la déduire par sa taille en octets divisé par la taille du premier élément.
+
+```
+int length = sizeof(array) / sizeof(array[O])
+```
+- Si ``sizeof(array)`` est ``0``, on peut écrire :
+```
+int length = sizeof(array) / sizeof(int)
+```
+
+&nbsp;
