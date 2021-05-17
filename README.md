@@ -164,3 +164,8 @@ int numbers[5] = {4, 8, 3, 2, 4}
 -Un tableau en C/C++ est une succession en mémoire des éléments à partir du premier.
 
 -On peut donc représenter un tableau grâce à un pointeur vers son premier élément,son type et sa taille!
+
+`std::vector` - *permet de déclarer un tableau dynamique*.
+type nomDArgument[] - *on peut l'utiliser quand on ne connaît pas la taille d'un tableau*
+
+`int length = sizeof(array) / siezof(array[O]);` - *si on ne connait pas la taille en éléments d'un tableau, on peut la déduire par sa taille en octets divisé par la taille du premier élément*.
