@@ -12,7 +12,3 @@ int main(){
     cout << "Resultat:" << a << " + " << b << " = " << (a + b) << endl; 
     return 0 ;
 }
-
-if(b => 0){
-
-}
