@@ -1,3 +1,7 @@
+---
+marp: false
+---
+
 # **C and C++**
 
 ## Apprendre le C et le C++ :) 

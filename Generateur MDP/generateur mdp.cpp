@@ -9,7 +9,7 @@ using namespace std;
 string passw(){
 
     string psw = "";
-    int strSize = rand() % 8 + 8;
+    int strSize = rand() % 8 +8;
     vector <char> ponctuation = {'.', '!', '?', ',', ';', ':'};
 
 
@@ -24,7 +24,7 @@ string passw(){
         } else if (i == 5){
             int random = rand() % 6;
             psw.push_back(ponctuation[random]);
-
+            
         } else {
             psw.push_back(rand() % 26 + 65);
         }
@@ -36,9 +36,8 @@ string passw(){
 
 int main(){
 
-    srand( time( NULL ) );
-    string code = passw();
+    srand( time( NULL ) );  /* initialize random seed: */
 
-    cout << code << endl;
+    cout << passw() << endl;
     
 }
